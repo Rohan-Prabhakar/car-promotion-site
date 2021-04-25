@@ -1,0 +1,287 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="js/aos.js"></script>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,900;1,200;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  
+    <link rel="stylesheet" href="vov.min.css">
+    
+</head>
+
+<body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+
+// You can also pass an optional settings object
+// below listed default settings
+
+  </script>
+  
+  <style>
+
+  
+    * {
+      box-sizing: border-box;
+    }
+    
+    .zoom {
+      padding: 0px;
+      
+      transition: transform 0.2s;
+      width: 2px;
+      height: 2px;
+      margin: 0 auto;
+    }
+    
+    .zoom:hover {
+      -ms-transform: scale(1.2); /* IE 9 */
+      -webkit-transform: scale(1.2); /* Safari 3-8 */
+      transform: scale(1.2); 
+    }
+    </style>
+
+ 
+   
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <style>
+  .fade {
+ 
+  opacity: 1;
+}
+  .navbar {
+    background-color: #000000;
+  }
+  .navbar .navbar-brand {
+    color: #ffffff;
+  }
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #de0003;
+  }
+  .navbar .navbar-text {
+    color: #ffffff;
+  }
+  .navbar .navbar-text a {
+    color: #de0003;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #de0003; 
+  }
+  .navbar .navbar-nav .nav-link {
+    color: #ffffff;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #de0003;
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus {
+    color: #de0003;
+    background-color: #1d1c1c;
+  }
+  .navbar .navbar-toggler {
+    border-color: #000000;
+  }
+  .navbar .navbar-toggler:hover,
+  .navbar .navbar-toggler:focus {
+    background-color: #000000;
+  }
+  .navbar .navbar-toggler .navbar-toggler-icon {
+    color: #ffffff;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #ffffff;
+  }
+  .navbar .navbar-link {
+    color: #ffffff;
+  }
+  .navbar .navbar-link:hover {
+    color: #de0003;
+  }
+  
+  @media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #ffffff;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #de0003;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #de0003;
+      background-color: #000000;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #ffffff;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #de0003;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #de0003;
+      background-color: #000000;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #ffffff;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #de0003;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #de0003;
+      background-color: #000000;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #ffffff;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #de0003;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #de0003;
+      background-color: #000000;
+    }
+  }
+  
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #ffffff;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #de0003;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #de0003;
+    background-color: #000000;
+  }  ;
+    </style>      
+  <a  class="navbar-brand" href="#">
+            <!--<img width="100" src="https://s3-ap-southeast-1.amazonaws.com/s3fileslive/public/logo/logo_5462636.png" alt="">-->
+          </a>
+        <a class="navbar-brand" href="#"><span style="color: red;">XYZ </span> Car Accesories</a>
+          
+        <div style="margin-left: 30%;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Car Perfumes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Car Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Interior Styling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Car Care</a>
+            </li>
+            
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+  <script src="js/scripts.js"></script>
+  <div class="vov fade-in-right"> <h1 style="position: absolute ;width: 450px; color: white; margin-top: 12%; margin-left:5%; font-family: 'Titillium Web', sans-serif; font-weight:500 ">Delivering Quality Car Accesories Since 1989</h1><button class="btn btn-outline-light" style="position: absolute; margin-top: 26%; margin-left:5%">Explore</button><img src="https://wallpapercave.com/wp/XMgT2G3.jpg" style="object-fit: cover; width: 1280.33px; height: 450px;" alt=""></div>
+  
+ 
+ <div data-aos="fade-in"  style=" width: 1280.33px; height: 380px; background-color:rgb(255, 255, 255); margin-bottom: 2%; ">
+  <br>
+  <br>
+  <center>
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;  color: rgb(0, 0, 0); font-weight: lighter;" >FAIR FRIENDLY</p>
+ 
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;margin-top: 0.3px; color: rgb(0, 0, 0); font-weight:normal" >SERVICE</p><br>
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 20px;  color: rgb(0, 0, 0); font-weight:normal " >Best rates in the market, friendly and hassle free installation of your car accessories.</p>
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 20px;text-align: center; color: rgb(0, 0, 0); font-weight:normal; " >We at KCA aim for the utmost customer satisfaction.  </p>
+
+  <button class="btn btn-danger" style="margin-top: 2%;"> READ MORE</button>
+</center>
+ </div>
+<div>
+ 
+  <div data-aos="slide-left">  
+ <div style=" width: 50%; height: 380px; margin-top: 2%;float: left; ">
+  <img style="width: 100%; height: 100%" src="https://wallpaperaccess.com/full/184388.jpg" alt="">
+ 
+</div>
+ 
+<div style=" width: 50%; height: 380px; margin-top: 2%; background-color: #c00003;float: right; ">
+  <center style="margin-top: 7%;">
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;  color: white; font-weight: lighter;" >TOP</p>
+ 
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;margin-top: 0.3px; color: rgb(255, 255, 255); font-weight:normal" >BRANDS</p><br>
+  <p style="font-family: 'Titillium Web', sans-serif; font-size: 20px;  color: rgb(255, 255, 255); font-weight:normal; padding-left: 1%; " >Buy car and bike accessories and  choose from top brands like Sparco, galio, Liqui Moly, armor all, rain x, Michelin, Hella, Airpro and many more</p>
+
+</center>  
+</div></div>
+
+  
+
+ 
+<div data-aos="slide-right">  
+    <div  style=" width: 50%; height: 380px; float: right; ">
+     <img style="width: 100%; height: 100%" src="https://image.freepik.com/free-photo/close-up-person-cleaning-car-interior_23-2148194077.jpg" alt="">
+    
+   </div>
+    <div style=" width: 50%; height: 380px; background-color: #272727;float: left; ">
+     <center style="margin-top: 7%;">
+     <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;  color: white; font-weight: lighter;" >PRO</p>
+    
+     <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;margin-top: 0.3px; color: rgb(255, 255, 255); font-weight:normal" >SOLUTIONS</p><br>
+     <p style="font-family: 'Titillium Web', sans-serif; font-size: 20px;  color: rgb(255, 255, 255); font-weight:normal; padding-left: 1%; " >Buy car and bike accessories and  choose from top brands like Sparco, galio, Liqui Moly, armor all, rain x, Michelin, Hella, Airpro and many more</p>
+   
+   </center>  
+   </div>
+    
+   <div  style="background-position: 1174px 40%;">
+      <center>
+        <h4 style="padding-top:px;">©Copyright:Rohan Prabhakar</h4>
+      </center>
+     
+</div>
+
+<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+
+</div>
+</body>
+</html>

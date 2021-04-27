@@ -23,7 +23,7 @@
     
 </head>
 
-<body>
+<body style="background-color: #e1e5e6;">
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
@@ -55,176 +55,40 @@
       -webkit-transform: scale(1.2); /* Safari 3-8 */
       transform: scale(1.2); 
     }
+    
     </style>
 
  
    
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <style>
-  .fade {
- 
-  opacity: 1;
-}
-  .navbar {
-    background-color: #000000;
-  }
-  .navbar .navbar-brand {
-    color: #ffffff;
-  }
-  .navbar .navbar-brand:hover,
-  .navbar .navbar-brand:focus {
-    color: #de0003;
-  }
-  .navbar .navbar-text {
-    color: #ffffff;
-  }
-  .navbar .navbar-text a {
-    color: #de0003;
-  }
-  .navbar .navbar-text a:hover,
-  .navbar .navbar-text a:focus {
-    color: #de0003; 
-  }
-  .navbar .navbar-nav .nav-link {
-    color: #ffffff;
-    border-radius: .25rem;
-    margin: 0 0.25em;
-  }
-  .navbar .navbar-nav .nav-link:not(.disabled):hover,
-  .navbar .navbar-nav .nav-link:not(.disabled):focus {
-    color: #de0003;
-  }
-  .navbar .navbar-nav .nav-item.active .nav-link,
-  .navbar .navbar-nav .nav-item.active .nav-link:hover,
-  .navbar .navbar-nav .nav-item.active .nav-link:focus,
-  .navbar .navbar-nav .nav-item.show .nav-link,
-  .navbar .navbar-nav .nav-item.show .nav-link:hover,
-  .navbar .navbar-nav .nav-item.show .nav-link:focus {
-    color: #de0003;
-    background-color: #1d1c1c;
-  }
-  .navbar .navbar-toggler {
-    border-color: #000000;
-  }
-  .navbar .navbar-toggler:hover,
-  .navbar .navbar-toggler:focus {
-    background-color: #000000;
-  }
-  .navbar .navbar-toggler .navbar-toggler-icon {
-    color: #ffffff;
-  }
-  .navbar .navbar-collapse,
-  .navbar .navbar-form {
-    border-color: #ffffff;
-  }
-  .navbar .navbar-link {
-    color: #ffffff;
-  }
-  .navbar .navbar-link:hover {
-    color: #de0003;
-  }
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a routerLink="/" class="navbar-brand mb-0 h2" href="#"><p style="color: red; display: inline;" >XYZ</p> Auto Accesories</a>
+  <ul class="navbar-nav ml-auto">
+  <li class="nav-item">
+  <a class="nav-link active  " href="#">Home</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#about">About</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#contact">Contact us</a>
+  </li>
+  </ul>
+  </nav>
   
-  @media (max-width: 575px) {
-    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
-      color: #ffffff;
-    }
-    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-      color: #de0003;
-    }
-    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-      color: #de0003;
-      background-color: #000000;
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
-      color: #ffffff;
-    }
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-      color: #de0003;
-    }
-    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-      color: #de0003;
-      background-color: #000000;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
-      color: #ffffff;
-    }
-    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-      color: #de0003;
-    }
-    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-      color: #de0003;
-      background-color: #000000;
-    }
-  }
-  
-  @media (max-width: 1199px) {
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
-      color: #ffffff;
-    }
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-      color: #de0003;
-    }
-    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-      color: #de0003;
-      background-color: #000000;
-    }
-  }
-  
-  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
-    color: #ffffff;
-  }
-  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
-  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #de0003;
-  }
-  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #de0003;
-    background-color: #000000;
-  }  ;
-    </style>      
-  <a  class="navbar-brand" href="#">
-            <!--<img width="100" src="https://s3-ap-southeast-1.amazonaws.com/s3fileslive/public/logo/logo_5462636.png" alt="">-->
-          </a>
-        <a class="navbar-brand" href="#"><span style="color: red;">XYZ </span> Car Accesories</a>
-          
-        <div style="margin-left: 30%;">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Car Perfumes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Car Care</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Interior Styling</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Car Care</a>
-            </li>
-            
-          </ul>
-        </div>
-        </div>
-      </nav>
 
   <script src="js/scripts.js"></script>
-  <div class="vov fade-in-right"> <h1 style="position: absolute ;width: 450px; color: white; margin-top: 12%; margin-left:5%; font-family: 'Titillium Web', sans-serif; font-weight:500 ">Delivering Quality Car Accesories Since 1989</h1><button class="btn btn-outline-light" style="position: absolute; margin-top: 26%; margin-left:5%">Explore</button><img src="https://wallpapercave.com/wp/XMgT2G3.jpg" style="object-fit: cover; width: 1280.33px; height: 450px;" alt=""></div>
-  
+  <div class="vov fade-in-right"> <h1 style="position: absolute ;width: 450px; color: white; margin-top: 12%; margin-left:5%; font-family: 'Titillium Web', sans-serif; font-weight:500 ">Delivering Quality Car Accesories Since 1989</h1><button  class="btn btn-outline-light" style="position: absolute; margin-top: 26%; margin-left:5%"><a href="#about">Explore</a></button><img src="https://wallpapercave.com/wp/XMgT2G3.jpg" style="object-fit: cover; width: 1280.33px; height: 450px;" alt=""></div>
+  <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});</script>
  
- <div data-aos="fade-in"  style=" width: 1280.33px; height: 380px; background-color:rgb(255, 255, 255); margin-bottom: 2%; ">
+ <div id="about" data-aos="fade-in" data-aos-duration="1000" style=" width: 100%; height: 380px; background-color:000000a1; margin-bottom: 2%; ">
   <br>
   <br>
   <center>
@@ -236,16 +100,16 @@
 
   <button class="btn btn-danger" style="margin-top: 2%;"> READ MORE</button>
 </center>
- </div>
-<div>
+</div>
+
+<div  data-aos="fade-up" data-aos-duration="2000">
  
-  <div data-aos="slide-left">  
  <div style=" width: 50%; height: 380px; margin-top: 2%;float: left; ">
   <img style="width: 100%; height: 100%" src="https://wallpaperaccess.com/full/184388.jpg" alt="">
  
 </div>
  
-<div style=" width: 50%; height: 380px; margin-top: 2%; background-color: #c00003;float: right; ">
+<div style=" width: 50%; height: 380px; margin-top: 2%; background-color: #990003;float: right; ">
   <center style="margin-top: 7%;">
   <p style="font-family: 'Titillium Web', sans-serif; font-size: 50px;  color: white; font-weight: lighter;" >TOP</p>
  
@@ -253,12 +117,13 @@
   <p style="font-family: 'Titillium Web', sans-serif; font-size: 20px;  color: rgb(255, 255, 255); font-weight:normal; padding-left: 1%; " >Buy car and bike accessories and  choose from top brands like Sparco, galio, Liqui Moly, armor all, rain x, Michelin, Hella, Airpro and many more</p>
 
 </center>  
-</div></div>
+</div>
+</div>
 
   
 
  
-<div data-aos="slide-right">  
+<div data-aos="fade-up" data-aos-duration="2000">  
     <div  style=" width: 50%; height: 380px; float: right; ">
      <img style="width: 100%; height: 100%" src="https://image.freepik.com/free-photo/close-up-person-cleaning-car-interior_23-2148194077.jpg" alt="">
     
@@ -272,16 +137,97 @@
    
    </center>  
    </div>
-    
-   <div  style="background-position: 1174px 40%;">
-      <center>
-        <h4 style="padding-top:px;">©Copyright:Rohan Prabhakar</h4>
-      </center>
-     
 </div>
 
-<script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+<div data-aos="slide-right" data-aos-duration="6000">
+<div id="contact"  style=" padding-left:2%;color: #000000;" class="row">
+  <div class="col-12 col-md-12 col-lg-6">
+    <!-- content -->
+    <div class="section-content anim text-left">
+      <!-- title and description -->
+      <div class="title-desc">
+        <div class="anim-2">
+          <h2 class="display-4 display-title">Contact Us</h2>
+          <br>
+          <p>We are willing to put up an extra effort to make you say WOW, we are at every step with you, we are far-reaching, we are liable.
+            </p>
+        </div>
+        <div style="display: inline-block;" class="address-container anim-3">
 
+          <div style="margin-top: 5%;" class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+              <h4>Contact</h4>
+              <p>Phone: +91 9909095554</p>
+              <p>Email: Info@example.com</p>
+
+              <div class="icons icons-margin">
+                 <a class="icon-btn" href="#">
+                  <i class="icon fa fa-facebook"></i>
+                </a>
+                <a class="icon-btn" href="https://www.instagram.com/mologmedia/" target="_blank" "="">
+                  <i class="icon fa fa-instagram"></i>
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6">
+              <h4>Address</h4>
+              <p>
+                Company address
+                <br> ABC Towers<br>
+Noida City Center<br>
+Noida, Uttar Pradesh (122002),India
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="padding: 7% 0 0 4% ; color: black;" class="col-12 col-md-5 ">
+    <div class="message-form">
+      <br>
+      <h4>Write message</h4>
+      <div class="form-container form-container-card">
+        <!-- Message form container -->
+        <form class="send_message_form message form" method="post" action="#"  id="message_form" novalidate="novalidate">
+          <div class="form-group name">
+            <input id="mes-name" name="name" type="text" placeholder="Name" class="form-control form-control-outline thick form-success-clean" required="" aria-required="true">
+          </div>
+          <div class="form-group email">
+            <input id="mes-email" type="email" placeholder="Email" name="email" class="form-control form-control-outline thick form-success-clean" required="" aria-required="true">
+          </div>
+          <div class="form-group no-border">
+            <textarea id="mes-text" placeholder="Message ..." name="message" class="form-control form-control-outline thick form-success-clean" required="" aria-required="true"></textarea>
+          
+            <div>
+              <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
+            </div>
+          </div>
+  
+          <div class="btns text-right">
+            <button id="submit-message" class="btn btn-outline-white btn-round btn-fullNot email_b" name="submit_message">
+              <span class="txt">Send Now</span>
+              <span class="arrow-icon"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+
+
+
+<br>
+<br>
+<center>
+  <h4 style="padding-top:px; color: rgb(0, 0, 0);">©Copyright:Rohan Prabhakar</h4>
+</center>
 </body>
 </html>
+

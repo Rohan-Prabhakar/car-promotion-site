@@ -10,3 +10,4 @@ kramdown:
   syntax_highlighter: rouge
   plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap

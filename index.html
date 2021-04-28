@@ -34,7 +34,15 @@
   </script>
   
   <style>
-
+     .navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
   
     * {
       box-sizing: border-box;
@@ -59,7 +67,7 @@
 
  
    
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar transparent navbar-expand-sm bg-dark navbar-dark">
   <a routerLink="/" class="navbar-brand mb-0 h2" href="#"><p style="color: red; display: inline;" >XYZ</p> Auto Accesories</a>
   <ul class="navbar-nav ml-auto">
   <li class="nav-item">
